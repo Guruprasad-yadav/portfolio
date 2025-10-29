@@ -1,0 +1,91 @@
+body {
+    background: #161616;
+    color: #fff;
+}
+
+.contact-title h1 {
+    padding: 0px 30px;
+    font-size: 50px;
+    font-weight: 600;
+    position: relative;
+}
+
+.highlight {
+    background: linear-gradient(90deg, #b930d4 40%, #ff9800 60%);
+    color: #fff;
+    padding: 0 8px;
+    border-radius: 6px;
+}
+#s-icons {
+    margin:2.4rem;
+}
+#s-icons a {
+    padding:1rem 0.2rem;
+    margin-top:2rem;
+    margin:0.4rem;
+}
+.social-icons {
+    display: flex;
+}
+#s-icons a i{
+    color:rgb(215, 209, 209);
+    font-size: 1.2rem;
+}
+
+#s-icons a i:hover {
+    transform: scale(1.3);
+    transition: 0.2s;
+}
+#s-icons a img:hover {
+    opacity: 0.6;
+    transform: scale(0.9);
+}
+.lets {
+    color: #b930d4;
+    font-weight: 700;
+}
+
+.talk {
+    color: #ff9800;
+    font-weight: 700;
+}
+
+.btn-gradient {
+    background: linear-gradient(40deg, #7c6f7f 40%, #e2b879 60%);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 28px;
+    transition: 0.3s;
+}
+.btn-gradient:hover {
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+
+.form-label {
+    color: #fff;
+}
+.form-control {
+    background: #222;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+}
+.form-control:focus {
+    background: #222;
+    color:white;
+    box-shadow: none;
+    border-color: #b930d4;
+}
+.container {
+    padding:5rem;
+    margin:5rem;
+}
+@media(max-width:756px){
+    .contact-title{
+        font-size: 3rem;
+    }
+}
+

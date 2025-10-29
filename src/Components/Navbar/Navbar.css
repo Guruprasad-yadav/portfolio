@@ -1,0 +1,129 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:20px 170px;
+}
+.navbar .img-link {
+    height:80px;
+    width:130px;
+    border-radius: 20px;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style:none;
+    gap:60px;
+    font-size: 17px;
+}
+.nav-connect {
+    padding:15px 35px;
+    border-radius: 50px;
+    background: linear-gradient(267deg,#e8eaad 0.36%, #2395e1 101.06%);
+    cursor: pointer;
+    font-size: 21px;
+    background-image:url('/src/assets/bg-img5.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover; 
+}
+.nav-connect a{
+    text-decoration: none;
+    color:aliceblue;
+}
+.nav-connect:hover {
+    transform: scale(1.05);
+}
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+}
+.nav-menu li a {
+    text-decoration: none;
+    color:aliceblue;
+}
+.nav-menu li img {
+    margin-top:-12px;
+    display: flex;
+}
+.nav-mob-close {
+    display: none;
+}
+@media(max-width:768px) {
+    .navbar {
+        margin:20px 50px
+    }
+    .nav-connect {
+        display: none;
+    }
+    .nav-mob-open {
+        display: block;
+        position: fixed;
+        right:30px
+    }
+    .nav-mob-close {
+        display: block;
+        position: relative;
+        top:40px;
+        left:260px;
+        width:30px;
+    }
+    .nav-menu {
+        position:fixed;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 600px;
+        gap:20px;
+        background-color: #110d0d;
+        width: 350px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s;
+        right:-450px;
+    }
+    .nav-menu li{
+        font-size: 24px;
+        padding-left: 70px;
+        flex-direction: row;
+        gap:20px;
+        margin-top: 20px;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 1250px) {
+    .navbar {
+        margin:20px 50px;
+        justify-content: space-around;
+    }
+    .navbar img {
+        display: none;
+    }
+    .nav-connect {
+        display: none;
+    }
+    .nav-mob-open{
+        display: none;
+    }
+    .nav-menu li a{
+        font-size: 18px;
+        flex-direction: row;
+        gap:10px;
+        margin-top: 20px;
+    }
+}
+@media(min-width: 1250px) and (max-width: 1720px) {
+    .navbar {
+        margin:20px 50px;
+        justify-content: space-evenly;
+    }
+    .nav-mob-open{
+        display: none;
+    }
+    .nav-menu li a{
+        font-size: 20px;
+        flex-direction: row;
+        gap:10px;
+        margin-top: 20px;
+    }
+}
