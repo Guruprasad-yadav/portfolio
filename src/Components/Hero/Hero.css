@@ -5,8 +5,14 @@
     border-radius: 50%;
     margin-top: 100px;
     object-fit: cover;
+    border: 5px solid #d0d0d0;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 25px;
+  transition: transform 0.4s ease;
 }
-
+.img-body:hover {
+    transform: scale(1.05);
+}
 .hero {
     display: flex;
     align-items: center;
@@ -20,7 +26,7 @@
     font-weight: 600;
 }
 .hero h1 span {
-    background: linear-gradient(267deg,#e8eaad 0.36%, #2395e1 101.06%);
+    background: linear-gradient(267deg,#8ed165 0.36%, #2395e1 101.06%);
     background-clip:text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -30,6 +36,7 @@
     width:60%;
     font-size: 22px;
     line-height: 40px;
+    color: black;
 }
 .hero-action {
     display: flex;
@@ -40,46 +47,55 @@
     margin-top:40px;
 }
 .hero-connect {
-    padding:20px 41px;
-    border-radius: 50px;
-    background: linear-gradient(267deg,#e8eaad 0.36%, #2395e1 101.06%);
-    cursor: pointer;
+  display: inline-block;
+  padding: 14px 38px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(111, 46, 201, 0.4);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+/* Smooth hover animation */
+.hero-connect:hover {
+  background: linear-gradient(240deg,#6e8efb,#cfcad2);
+  transform: scale(1.08);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
 }
 .hero-resume {
     padding:15px 40px;
     border-radius: 40px;
     font-size: 18px;
-    border:2px solid #fff;
+    border:2px solid #f0eeee;
     cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.15); /* translucent background */
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    transition: all 0.4s ease-in-out;
+    
 }
-.hero-connect:hover {
-    border:2px solid white;
-}
+
 .hero-resume:hover {
-    border-color: #B415FF;
+    border-color: #cfcad2;
 }
 
-
-  .hero-connect {
-    padding:15px 40px;
-    border-radius: 40px;
-    background: linear-gradient(90deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05));
-    border: 1px solid rgba(255,255,255,0.3);
-    backdrop-filter: blur(20px) saturate(180%);
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
-    box-shadow: 0 0 25px rgba(255,255,255,0.2), inset 0 0 10px rgba(255,255,255,0.2);
-    color: white;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
   .hero-connect a {
     text-decoration: none;
-    color:aliceblue;
+    color:rgb(31, 33, 35);
   }
 
   .hero-connect:hover {
@@ -102,17 +118,20 @@
     }
     .hero-action {
         gap:16px;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
         margin-bottom: 50px;
+
     }
     .hero-connect {
-        padding:20px 30px;
+        padding:20px 10px;
+        font-size: 15px;
         border-radius: 40px;
 
     }
     .hero-resume {
-        padding:20px 50px;
+        padding:20px 25px;
+        font-size: 15px;
         border-radius: 40px;
     }
 }

@@ -1,91 +1,200 @@
-body {
-    background: #161616;
-    color: #fff;
+/* 🌌 CONTACT SECTION BASE */
+.contact {
+  width: 90%;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 60px 40px;
+  background: linear-gradient(135deg, #222121, #595858);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  transition: all 0.4s ease;
+}
+
+/* 🏷️ SECTION TITLE */
+.contact-title {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .contact-title h1 {
-    padding: 0px 30px;
-    font-size: 50px;
-    font-weight: 600;
-    position: relative;
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
 }
 
 .highlight {
-    background: linear-gradient(90deg, #b930d4 40%, #ff9800 60%);
-    color: #fff;
-    padding: 0 8px;
-    border-radius: 6px;
-}
-#s-icons {
-    margin:2.4rem;
-}
-#s-icons a {
-    padding:1rem 0.2rem;
-    margin-top:2rem;
-    margin:0.4rem;
-}
-.social-icons {
-    display: flex;
-}
-#s-icons a i{
-    color:rgb(215, 209, 209);
-    font-size: 1.2rem;
+  color: #00e0ff;
 }
 
-#s-icons a i:hover {
-    transform: scale(1.3);
-    transition: 0.2s;
+/* 🧭 LEFT SECTION */
+.left {
+  color: #e0e0e0;
+  padding: 15px;
 }
-#s-icons a img:hover {
-    opacity: 0.6;
-    transform: scale(0.9);
+
+.left h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
+
 .lets {
-    color: #b930d4;
-    font-weight: 700;
+  color: #6c63ff;
 }
 
 .talk {
-    color: #ff9800;
-    font-weight: 700;
+  color: #00e0ff;
 }
 
+.left p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #d3d3d3;
+}
+
+/* 🧿 SOCIAL ICONS */
+.social-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00e0ff;
+  transform: scale(1.2);
+}
+
+/* 📝 FORM SECTION */
+form.contact {
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(6px);
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #d0d0d0;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 12px;
+  outline: none;
+  transition: border 0.3s ease, background 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #00e0ff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ✨ SUBMIT BUTTON */
 .btn-gradient {
-    background: linear-gradient(40deg, #7c6f7f 40%, #e2b879 60%);
-    color: #fff;
-    font-weight: 600;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 28px;
-    transition: 0.3s;
+  width: 100%;
+  margin-top: 15px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #00e0ff, #6c63ff);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
+
 .btn-gradient:hover {
-    transform: scale(0.9);
-    transition: 0.3s;
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(108, 99, 255, 0.5);
+  background: linear-gradient(90deg, #6c63ff, #00e0ff);
 }
 
-.form-label {
-    color: #fff;
-}
-.form-control {
-    background: #222;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-}
-.form-control:focus {
-    background: #222;
-    color:white;
-    box-shadow: none;
-    border-color: #b930d4;
-}
-.container {
-    padding:5rem;
-    margin:5rem;
-}
-@media(max-width:756px){
-    .contact-title{
-        font-size: 3rem;
-    }
+/* --------------------------------------------- */
+/* 🌈 RESPONSIVE DESIGN */
+/* --------------------------------------------- */
+
+/* Tablets and smaller laptops */
+@media (max-width: 900px) {
+  .contact {
+    width: 95%;
+    padding: 40px 20px;
+  }
+
+  .contact-title h1 {
+    font-size: 2.2rem;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .left {
+    text-align: center;
+    width: 100%;
+  }
+
+  form.contact {
+    width: 100%;
+    padding: 25px;
+  }
 }
 
+/* 📱 Phones (Below 600px) */
+@media (max-width: 600px) {
+  .contact {
+    width: 98%;
+    padding: 25px 15px;
+    border-radius: 10px;
+  }
+
+  .contact-title h1 {
+    font-size: 1.8rem;
+  }
+
+  .left h2 {
+    font-size: 1.4rem;
+  }
+
+  .left p {
+    font-size: 0.9rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  form.contact {
+    padding: 20px;
+  }
+
+  form input,
+  form textarea {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .btn-gradient {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}

@@ -23,6 +23,8 @@
     padding: 0px 30px;
     font-size: 50px;
     font-weight: 600;
+    position: relative;
+    z-index: 2;
 }
 .education-title img {
     position: absolute;
@@ -31,6 +33,7 @@
     z-index: -1;
     flex: 1;
     opacity: 0.5;
+    left:87px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,12 +53,12 @@
 }
 .mca, .degree, .inter   {
        box-shadow: 0 8px 25px rgba(6, 12, 14, 0.2);
-       border:1px solid rgb(81, 80, 80);
+       border:2px solid rgb(241, 241, 241);
       transform: translateY(-1px);
       
 }
 .mca h3, .degree h3, .inter h3 {
-    background: linear-gradient(270deg,#dcdf08 50%,#1557ff);
+    background: linear-gradient(270deg,#616226 50%,#1557ff);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1.6rem;
@@ -66,33 +69,27 @@
 /* Education.css */
 .mca:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 35px rgba(192, 163, 200, 0.25),
-                  0 0 80px rgba(218, 194, 172, 0.2),
-                  inset 0 0 14px rgba(197, 155, 155, 0.04);
+  box-shadow: 0 10px 25px rgba(35, 35, 36, 0.3);
   
 }
 .degree:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 35px rgba(192, 163, 200, 0.25),
-                  0 0 80px rgba(218, 194, 172, 0.2),
-                  inset 0 0 14px rgba(197, 155, 155, 0.04);
+  box-shadow: 0 10px 25px rgba(35, 35, 36, 0.3);
 }
 .inter:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 35px rgba(192, 163, 200, 0.25),
-                  0 0 80px rgba(218, 194, 172, 0.2),
-                  inset 0 0 14px rgba(197, 155, 155, 0.04);
+  box-shadow: 0 10px 25px rgba(35, 35, 36, 0.3);
 }
 
 .details h5 {
   margin-bottom: 8px;
-  color: #b0b0b0;
+  color: #302c2c;
   font-weight: 500;
 }
 
 .details p {
   margin-bottom: 4px;
-  color: #d6d6d6;
+  color: #3b3838;
 }
 
 .ed-img {

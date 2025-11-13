@@ -1,3 +1,4 @@
+import p4_png from "../assets/p4.png"
 const Services_Data = [
     {
         s_no: "01",
@@ -24,8 +25,8 @@ const Services_Data = [
         s_no: "04",
         s_name: "Weather-api",
         s_desc: "A real-time weather app that fetches live data from an external API to display temperature, humidity, and conditions for any city worldwide.",
-        Image: "https://lh3.googleusercontent.com/KLkiT09gJwKeQkN6hMDyc7IN7YMUU3ME9fi8S640WzZn-he-0Sj8DXrjwmNBwXzr_5c",
-        gitlink: "https://github.com/Guruprasad-yadav/weather-api",
+        Image: p4_png,
+        gitlink: "https://th.bing.com/th/id/OIP.iFchkPW6tVoyec90KZkm3AaGc?w=163&h=180&c=7&r=0&o=7&cb=ucfimg2&dpr=1.4&pid=1.7&rm=3&ucfimg=1",
     },
     {
         s_no: "05",
